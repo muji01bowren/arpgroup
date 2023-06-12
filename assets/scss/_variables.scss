@@ -1,0 +1,61 @@
+/*
+	this is my variables file to keep track of all color variations and widths
+*/
+
+//please use dashes(-) for variable names
+
+//Global variables
+
+$img-directory: '../images/';
+$header-dir: 'header/';
+$icon-dir: 'icons/';
+
+// PADDING
+$content-area-padding: 20px;
+
+// WIDTHS
+$document-max-width: 1920;
+$content-area-width: 1200px;
+$content-area-small_width: 800px;
+
+// MEDIA QUERIES
+$content_area_limit: $content_area_width + ($content_area_padding * 2);
+
+//colors
+$brand-color-1: #000000;
+$brand-color-2: #20438F;
+$brand-color-3: #262525;
+$brand-color-4: #1C6EA3;
+$brand-color-5: #0D3C6D;
+$brand-color-6: #F5F5F5;
+$brand-color-7: #FAFAFA;
+$brand-color-8: #989898;
+$brand-color-9: #E4E4E4;
+$brand-color-10: #FBFBFB;
+$brand-color-11: #F5F5F5;
+
+//widths
+//how many columns can fit in
+$col-1: 100%;
+$col-2: 50%;
+$col-3: 33.3%;
+$col-4: 25%;
+$col-5: 20%;
+$col-6: 16.6%;
+$col-7: 14.2%;
+$col-8: 12.5%;
+$col-9: 11.1%;
+$col-10: 10%;
+
+//font family
+$brand-font-family-1: 'Open Sans', sans-serif;
+$brand-font-family-2: 'Open Sans', sans-serif;
+$brand-font-family-3: 'Open Sans', sans-serif;
+$brand-font-family-4: 'Open Sans', sans-serif;
+
+//borders
+$brand-border-1: 1px solid #000000;
+$brand-border-2: 1px solid #000000;
+$brand-border-3: 1px solid #000000;
+$brand-border-4: 1px solid #000000;
+$brand-border-5: 1px solid #000000;

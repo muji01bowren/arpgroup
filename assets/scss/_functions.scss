@@ -1,0 +1,9 @@
+@import "_mixins";
+@import "_variables.scss";
+
+//please use underscore(_) for function names
+
+//to calculate px to percentage
+@function px_to_percent($element_width, $element_container) {
+	@return  ($element_width/ $element_container) * 100%;
+}

@@ -1,0 +1,29 @@
+/*
+
+associative array
+$numbers: (3 "three") (4 "four");
+
+@each $i in $numbers {
+  .thismustbeahash{nth($i,2)}-thismustbehash{nth($i,1)} {
+    !* CSS styles *!
+  }
+
+
+  example
+  .three-3 {
+    CSS styles
+  }
+
+  .four-4 {
+     CSS styles
+  }
+
+
+}*/
+/******DEFAULTS******/
+/******padding******/
+/******Font Sizes******/
+/******Colors******/
+/******Background Colors******/
+/******Font Sizes******/
+/******Line Height******/

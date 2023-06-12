@@ -1,0 +1,275 @@
+@import "_variables.scss";
+/*
+	this is my mixins file for all my browser prefixes and shorten code for styling
+*/
+
+//please use dashes(-) for variable names
+
+//clearfix
+@mixin clear-fix {
+	position: static;
+
+	&::after {
+		position: static;
+		content: '';
+		display: table;
+		clear: both;
+	}
+}
+
+//box-sizing
+@mixin box-sizing{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+//image urls
+@mixin background-content($file, $repeat, $position, $size) {
+	@if($file == null){
+		background-image: none;
+		filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='#{$file}', sizingMethod=scale);
+		-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='#{$file}', sizingMethod=scale)";
+		background-repeat: $repeat;
+		background-position: $position;
+		-webkit-background-size: $size;
+		-moz-background-size: $size;
+		-o-background-size: $size;
+		background-size: $size;
+	}@else{
+		background-image: url(#{$img-directory}#{$file});
+		filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='#{$file}', sizingMethod=scale);
+		-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='#{$file}', sizingMethod=scale)";
+		background-repeat: $repeat;
+		background-position: $position;
+		-webkit-background-size: $size;
+		-moz-background-size: $size;
+		-o-background-size: $size;
+		background-size: $size;
+	}
+}
+
+// CENTERING ELEMENTS
+@mixin center-vertical(){
+	@include transform(translateY(-50%));
+}
+
+@mixin center-horizontal(){
+	@include transform(translateX(-50%));
+}
+
+//font styles
+@mixin font-style($fsize, $color, $weight, $height, $align){
+	font-size: $fsize;
+	color: $color;
+	font-weight: $weight;
+	line-height: $height;
+	text-align: $align;
+}
+
+//pseudo-element
+@mixin pseudo-element($y_top, $x_left, $x_right :auto, $y_bottom: auto, $w: auto, $h: auto){
+	content: '';
+	position: absolute;
+	display: block;
+	width: $w;
+	height: $h;
+	top: $y_top;
+	left: $x_left;
+	right: $x_right;
+	bottom: $y_bottom;
+}
+
+//to position the element in parent
+@mixin positioner($pos, $left, $top) {
+	position: $pos;
+	top: $top;
+	left: $left;
+}
+
+//element styles
+@mixin elm($width, $height, $display){
+	display: $display;
+	width: $width;
+	height: $height;
+}
+
+//opacity
+@mixin opacity($opacity: 0){
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity="+ $opacity * 100 +")";
+	filter: alpha(opacity=$opacity * 100);
+	-moz-opacity: $opacity;
+	opacity: $opacity;
+}
+
+//position element by position
+@mixin translate($elmposX, $elmposY){
+	-webkit-transform: translate($elmposX, $elmposY);
+	   -moz-transform: translate($elmposX, $elmposY);
+		-ms-transform: translate($elmposX, $elmposY);
+		 -o-transform: translate($elmposX, $elmposY);
+			transform: translate($elmposX, $elmposY);
+}
+
+@mixin transform-origin($x, $y){
+	-webkit-transform-origin: $x $y;
+	-moz-transform-origin: $x $y;
+	-ms-transform-origin: $x $y;
+	-o-transform-origin: $x $y;
+	transform-origin: $x $y;
+}
+
+//transition elements
+@mixin transition($timing, $property: all){
+	-webkit-transition: $property $timing linear;
+	   -moz-transition: $property $timing linear;
+	    -ms-transition: $property $timing linear;
+		 -o-transition: $property $timing linear;
+			transition: $property $timing linear;
+}
+
+//to skew the element
+@mixin skew($skewXdeg, $skewYdeg) {
+	-webkit-transform: skew($skewXdeg, $skewYdeg);
+	   -moz-transform: skew($skewXdeg, $skewYdeg);
+		-ms-transform: skew($skewXdeg, $skewYdeg);
+		 -o-transform: skew($skewXdeg, $skewYdeg);
+			transform: skew($skewXdeg, $skewYdeg);
+}
+
+//to scale the element
+@mixin scale($scaleX,$scaleY) {
+	-webkit-transform: scale($scaleX, $scaleY);
+	   -moz-transform: scale($scaleX, $scaleY);
+		-ms-transform: scale($scaleX, $scaleY);
+		 -o-transform: scale($scaleX, $scaleY);
+			transform: scale($scaleX, $scaleY);
+}
+
+//border radius styles
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+	   -moz-border-radius: $radius;
+		-ms-border-radius: $radius;
+		 -o-border-radius: $radius;
+			border-radius: $radius;
+}
+
+//to rotate the element
+@mixin rotate($z) {
+	-webkit-transform: rotate($z);
+	   -moz-transform: rotate($z);
+		-ms-transform: rotate($z);
+		 -o-transform: rotate($z);
+			transform: rotate($z);
+}
+
+//box-shadow
+@mixin box-shadow($value) {
+	-webkit-box-shadow: $value;
+	   -moz-box-shadow: $value;
+		-ms-box-shadow: $value;
+		 -o-box-shadow: $value;
+			box-shadow: $value;
+}
+
+//place-holder
+@mixin place-holder( $color, $fontsize, $lineheight){
+	&::-webkit-input-placeholder {
+		color: $color;
+		font-size: $fontsize;
+		line-height: $lineheight;
+	}
+	&::-moz-placeholder {
+		color: $color;
+		font-size: $fontsize;
+		line-height: $lineheight;
+	}
+	&:-ms-input-placeholder {
+		color: $color;
+		font-size: $fontsize;
+		line-height: $lineheight;
+	}
+	&:-moz-placeholder {
+		color: $color;
+		font-size: $fontsize;
+		line-height: $lineheight;
+	}
+}
+
+//key-frames
+@mixin keyframes($name) {
+	@-webkit-keyframes #{$name} {
+		@content;
+	}
+	@-moz-keyframes #{$name} {
+		@content;
+	}
+	@-ms-keyframes #{$name} {
+		@content;
+	}
+	@keyframes #{$name} {
+		@content;
+	}
+}
+
+//media queries
+//screen width 800px
+@mixin query-800($padding: 0 40px){
+	h1{ font-size: 32px; line-height: 34px; }
+	h2{ font-size: 27px; line-height: 30px; }
+	h3{ font-size: 25px; line-height: 27px; }
+	h4{ font-size: 22px; line-height: 25px; }
+	h5{ font-size: 16px; line-height: 18px; }
+	p,a{ font-size: 15px; line-height: 17px; }
+
+	.container{
+		padding: $padding;
+	}
+}
+
+//screen width 600px
+@mixin query-600($padding: 0 25px){
+	h1{ font-size: 28px; line-height: 30px; }
+	h2{ font-size: 25px; line-height: 27px; }
+	h3{ font-size: 22px; line-height: 25px; }
+	h4{ font-size: 18px; line-height: 20px; }
+	h5{ font-size: 16px; line-height: 18px; }
+	p,a{ font-size: 13px; line-height: 15px; }
+
+	.container{
+		padding: $padding;
+	}
+}
+/*
+// _mixins.scss
+
+// GENERAL
+
+@mixin opacity($opacity: 0){
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity="+ $opacity * 100 +")";
+  filter: alpha(opacity=$opacity * 100);
+  -moz-opacity: $opacity;
+  opacity: $opacity;
+}
+
+@mixin transform($transform){
+  -webkit-transform: $transform;
+  -moz-transform: $transform;
+  -ms-transform: $transform;
+  -o-transform: $transform;
+  transform: $transform;
+}
+
+@mixin transition-timing($function){
+  -webkit-transition-timing-function: $function;
+  -moz-transition-timing-function: $function;
+  -ms-transition-timing-function: $function;
+  -o-transition-timing-function: $function;
+  transition-timing-function: $function;
+}
+
+
+*/

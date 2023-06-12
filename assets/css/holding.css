@@ -1,0 +1,139 @@
+body { font-family: "Open Sans" }
+
+nav { width: 100%; background: #262626; height: 75px; padding-top: 23px; }
+nav section.nav_holder { width: 1200px; margin: 0 auto; }
+nav section.nav_holder .logo { float: left; }
+nav section.nav_holder .menu { float: right; }
+
+nav section.nav_holder .menu ul li { float: left; display: block;  margin-right: 20px; }
+nav section.nav_holder .menu ul li a { background: #262626; display: block; float: left; text-decoration: none; color: grey; font-size: 15px; padding: 16px; }
+.nav_holder .menu ul li a:hover { background: #212121; }
+
+header { width: 100%; height: 100vh; position: relative; }
+    header a.logo { display: block; padding-left: 4%; padding-top: 4%; }
+    header a.logo img { width: 260px; }
+
+    header h1 { color: #fff; font-family: 'Paytone One', sans-serif; font-weight: normal; font-size: 78px; width: 100%; text-align: center; margin-bottom: 25px;  }
+    header p { font-size: 17px; color: #fff; text-align: center; }
+    header a.demo { font-size: 14px; text-decoration: none; margin-left: 500px; margin-top: 40px; width: 200px; display: block; color: #fff; background: #1FBBEE; padding: 14px; border-radius: 3px; text-align: center; }
+    header a.demo:hover { opacity: 0.9; }
+
+    header .row { width: 1200px; margin: 0 auto; padding-top: 10%; padding-bottom: 140px;  }
+
+    section.services { width: 100%; min-height: 100vh; }
+    section.services .row { width: 1200px; margin: 0 auto; padding-top: 10%; padding-bottom: 140px; }
+
+    section.services .row h3 { font-weight: normal; text-align: center; color: #fff; font-size: 35px; font-family: 'Paytone One'; margin-bottom: 70px; }
+
+    section.services .row .services_holder { clear: both; float: left; }
+    section.services .row .service { width: 50%; float: left; margin-bottom: 70px; }
+
+    section.services .row .service .s_logo { float: left; margin-right: 30px; }
+    section.services .row .service .s_desc { width: 74%; float: left; margin-top: 30px; }
+    section.services .row .service .s_desc h4 { color: #fff; font-size: 20px; font-family: 'Paytone One', sans-serif; font-weight: normal; }
+    section.services .row .service .s_desc p { color: #fff; font-size: 17px; }
+
+    section.services .row a.demo { font-size: 14px; text-decoration: none; margin-top: 0px; width: 200px; display: block; color: #fff; background: #FC6D6D; padding: 14px; border-radius: 3px; text-align: center; float: right; }
+
+    section.contact { width: 100%; min-height: 100vh; }
+    section.contact .row { width: 100%; margin: 0 auto; padding-top: 10%; padding-bottom: 140px; }
+
+    section.stats { width: 100%; min-height: 100vh; }
+    section.stats .row { width: 100%; margin: 0 auto; padding-top: 3%; }
+    section.stats .row h3 {  width: 980px; font-weight: normal; margin: 0 auto; color: #fff; text-align: left; font-size: 34px; font-family: 'Paytone One'; margin-bottom: 40px; }
+    section.stats .row .stat { box-sizing: border-box; -webkit-box-sizing:border-box;-moz-box-sizing:border-box; width: 50%; float: left; padding: 70px; padding-top: 60px; padding-bottom: 60px; }
+
+    section.stats .row .stat .stat_copy { width: 50%; }
+    section.stats .row .stat .left_text { float: left; width: 40%; margin-right: 6%; color: #fff; font-size: 17px; text-align: right; }
+    section.stats .row .stat .pinkdot { float: right; width: 42%; padding-left: 5%; color: #fff; font-size: 17px; text-align: left; padding-right: 25px; }
+    section.stats .row .stat .right_text { float: left; width: 44%; text-align: left; }
+    section.stats .row .stat .right_text p:first-child { font-size: 55px; font-family: 'Paytone One'; line-height: 56px; margin-top: -8px;  }
+    section.stats .row .stat .right_text p:last-child { font-size: 17px; margin-top: 10px; color: #fff; }
+
+    section.contact .row .left { float: left; width: 45%; margin-right: 5%; }
+    section.contact .row .left p { color: #fff; font-size: 62px; font-family: 'Paytone One'; width: 58%; text-align: right; line-height: 66px; float: right; }
+    section.contact .row .right { padding: 35px; float: right; background: #03475D; width: 50%; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; }
+
+    section.contact .row .right .form_row { display: block; margin-bottom: 20px; clear: both; }
+    section.contact .row .right form { width: 370px; }
+    section.contact .row .right label { color: #fff; font-size: 17px; display: block; margin-bottom: 5px; }
+    section.contact .row .right input { color: #fff; font-size: 17px; display: block; margin-bottom: 5px; background: #1E5E72; border: none; padding: 10px; width: 350px; }
+    section.contact .row .right textarea { color: #fff; font-size: 17px; display: block; margin-bottom: 5px; background: #1E5E72; border: none; padding: 10px; width: 350px; }
+
+    section.contact .row .right input[type="submit"] { cursor: pointer; font-size: 14px; text-decoration: none; margin-top: 0px; width: 200px; display: block; color: #fff; background: #FC6D6D; padding: 14px; border-radius: 3px; text-align: center; float: right; }
+
+    .clear { clear: both; }
+    .error { border: 1px solid #FC6D6D !important; }
+    .error_box { font-size: 14px; width: 350px; padding: 10px; background: #FC6D6D; margin-bottom: 25px; color: #fff; text-transform: uppercase; }
+    .success_box { font-size: 14px; width: 350px; padding: 10px; background: #1fbbee; margin-bottom: 25px; color: #fff; text-transform: uppercase; }
+
+    .more { display: block; position: absolute; bottom: 15px; width: 66px; margin: 0 auto; left: 49.8%; }
+    .more:hover { opacity: 0.9; }
+
+    .stats_more { margin-left: 49.8%; }
+
+    .floatleft { float: left; }
+    .floatright { float: right; }
+
+    footer { display: none; }
+
+    /* Start Mobile */
+
+    @media screen and (max-width: 1025px) {
+
+        header a.logo { display: block; padding-left: 2%; padding-top: 2%; }
+        header a.logo img { width: 50%; padding-left: 25%; padding-top: 5%; }
+
+        header .row { width: 100%; padding-top: 50px; }
+        header .row h1 { width: 92%; margin-left: 4%; font-size: 38px; line-height: 40px; }
+        header .row p { width: 92%; margin-left: 4%; font-size: 17px; line-height: 20px; }
+
+        header a.demo { width: 70%; margin-left: 12%; margin-top: 50px; }
+
+        .more { left: 45%; top: 75%; }
+
+        section.stats .row { width: 100%; padding-top: 50px; }
+        section.stats .row h3 { width: 92%; margin-left: 4%; font-size: 20px; line-height: 24px; }
+
+        section.stats .row .stat { width: 92%; margin-left: 4%; clear: both; padding: 30px; padding-left: 15px; padding-right: 15px; }
+        section.stats .row .stat .stat_copy { width: 100%; }
+        section.stats .row .stat .pinkdot { width: 90%; margin-left: 5%; }
+        section.stats .row .stat .pinkdot p { padding-left: 20px; }
+
+        .stats_more { display: block; padding-bottom: 30px; padding-top: 15px; }
+
+        section.stats .row .stat .right_text p:first-child { font-size: 44px; line-height: 48px; }
+
+        section.stats .row .stat .left_text { width: 52%; }
+        section.stats .row .stat .right_text { width: 40%; }
+
+        section.services .row { width: 92%; margin-left: 4%;  }
+        section.services .row h3 { font-size: 25px; margin-bottom: 40px; }
+        section.services .row .service { clear:both;width: 100%; margin-bottom: 45px; }
+        section.services .row .services_holder { width: 100%; }
+        section.services .row .service .s_logo { width: 100%; text-align: center; clear: both; margin-right: 0px; width: 100%; }
+        section.services .row .service .s_logo img { width: 25%; }
+        section.services .row .service .s_desc { clear: both; width: 80%; margin-left: 10%; text-align: center; }
+
+        section.services .row .service .s_desc h4, section.services .row .service .s_desc p { clear: both; }
+
+        section.services .row a.demo { width: 70%; margin-left: 12%; margin-top: 15px; clear: both; float: none; }
+
+        section.services .row { padding-bottom: 10%; }
+
+        section.contact .row { width: 100%; }
+
+        section.contact .row .left p { font-size: 25px; line-height: 29px; margin-bottom: 40px; float: none; width: 100%; text-align: center; }
+
+        section.contact .row .left { width: 92%; margin-left: 4%; }
+        section.contact .row .right { width: 100%; }
+
+        section.contact .row .right input { width: 95%; }
+        section.contact .row .right textarea { width: 95%; }
+        section.contact .row .right input[type="submit"] { float: none; width: 70%; margin-left: 17%; margin-top: 40px; }
+
+        section.contact .row .right form { width: 100%; }
+
+        .error_box, .success_box { width: 95%; }
+
+    }

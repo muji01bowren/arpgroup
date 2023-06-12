@@ -1,0 +1,113 @@
+/******DEFAULTS******/ /*
+
+associative array
+$numbers: (3 "three") (4 "four");
+
+@each $i in $numbers {
+  .thismustbeahash{nth($i,2)}-thismustbehash{nth($i,1)} {
+    !* CSS styles *!
+  }
+
+
+  example
+  .three-3 {
+    CSS styles
+  }
+
+  .four-4 {
+     CSS styles
+  }
+
+
+}*/
+/******DEFAULTS******/
+/******padding******/
+/******Font Sizes******/
+/******Colors******/
+/******Background Colors******/
+/******Font Sizes******/
+/******Line Height******/
+body {
+  background-color: #FFFFFF;
+}
+
+.companies {
+  display: block;
+}
+.companies .col-12 {
+  color: azure;
+  margin-top: 5vh;
+  background-color: #085895 !important;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 800;
+  padding: 0.5rem;
+}
+.companies div.column {
+  position: relative;
+}
+.companies #ent-logo {
+  position: absolute;
+  top: 2px;
+  height: 300px;
+  width: 100%;
+  background-size: cover;
+  z-index: 99999;
+}
+.companies .col-5 {
+  background-image: url(/img/ARPC.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.companies .col-6 {
+  padding: 1.5vh;
+  border: 1px solid black;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+.companies img.card-img-top {
+  border: 0.1rem solid black;
+  border-radius: 0%;
+}
+.companies div.card {
+  border: 0;
+  border-radius: 0%;
+}
+.companies .card-img-overlay {
+  border-radius: 0%;
+  border: 1px solid black;
+}
+.companies #lastdiv {
+  margin-top: 0;
+  background-color: #ffffff !important;
+  height: 15vh;
+  border: 1px solid black;
+}
+.companies .col-12.bg-primary {
+  padding: 25px 20px;
+}
+
+.three-column .card {
+  border: none;
+  margin-bottom: 18px;
+}
+.three-column .card img {
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 0;
+}
+.three-column .card-title {
+  color: #FFFFFF;
+}
+.three-column .btn, .three-column .--bs-btn-border-radius {
+  border-radius: 0;
+}
+.three-column .card-body {
+  margin-bottom: 18px;
+}
+.three-column .card-body > * {
+  /*text-transform: uppercase;*/
+}
+.three-column .d-grid .btn, .three-column .card-body {
+  padding: 25px 20px;
+}
